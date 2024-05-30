@@ -8,7 +8,7 @@ int main() {
     scanf("%d", &year);
     isLeapYear = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
     if (isLeapYear) {
-        daysInMonths[1] = 29; // Adjust February days for leap year
+        daysInMonths[1] = 29; 
     }
     int q = 1;
     int m = 13;
@@ -23,7 +23,6 @@ int main() {
         for (weekDay = 0; weekDay < startingDay; weekDay++) {
             printf("     ");
         }
-        // Print the days of the month
         for (day = 1; day <= daysInMonth; day++) {
             printf("%5d", day);
             if (++startingDay > 6) {
